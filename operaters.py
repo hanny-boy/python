@@ -1,7 +1,11 @@
-n1 = int(input("Enter a number: "))
-n2 = int(input("Enter another number:"))
-n3 = int(input("Enter 3rd number:"))
-n4 = int(input("Enter 4th number:"))
-avg = ( n1 + n2 + n3 + n4) / 4
-if avg > 90:
-    print("You are an A grade student")
+x = 5
+if (type(x)== int):
+    print("x is an integer")
+else:
+    print("x is not an integer")
+a = 10
+b = -10
+c = a << 1
+d = a >> 1
+print("a leftshift 1 is:", c)
+print( "a rightshift 1 is :", d)

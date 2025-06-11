@@ -1,11 +1,10 @@
-x = 5
-if (type(x)== int):
-    print("x is an integer")
-else:
-    print("x is not an integer")
-a = 10
-b = -10
-c = a << 1
-d = a >> 1
-prin ("a leftshift 1 is:", c)
-print( "a rightshift 1 is :", d)
+mean1 = 80
+count = 600
+sum = mean1 * count
+print(f"The sum of the numbers is: {sum}")
+wn = 87
+rn = 90
+ns = sum - (wn + rn)
+print(f"The sum of the numbers is: {ns}")
+mean2 = ns / count
+print(f"The average of the numbers is: {mean2}")
