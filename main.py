@@ -1,5 +1,13 @@
-st = input("Enter the string:")
-st2 = ""
-for i in st:
-    st2 = i + st2
-print (f"Reversed string: {st2}")
+row = int(input("Enter number of rows: "))
+if row % 2 == 0:
+    half = row // 2
+else:
+    half = row // 2 + 1
+space = half - 1
+for i in range(1, half + 1):
+    for j in range(space):
+        print(" ", end="")
+    space -= 1
+    for j in range(1, i + 1):
+        print("* ", end="")
+    print()
