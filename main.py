@@ -1,13 +1,20 @@
-row = int(input("Enter number of rows: "))
-if row % 2 == 0:
-    half = row // 2
-else:
-    half = row // 2 + 1
-space = half - 1
-for i in range(1, half + 1):
-    for j in range(space):
-        print(" ", end="")
-    space -= 1
-    for j in range(1, i + 1):
-        print("* ", end="")
-    print()
+import turtle
+turtle.Screen.bgcolor("Green")
+turtle.Screen.setup(300, 400)
+p = turtle.Turtle()
+p.forward(100)
+p.left(120)
+p.forward(100)
+p.left(120)
+p.forward(100)
+p.penup()
+p.right(150)
+p.forward(50)
+p.pendown()
+p.right(90)
+p.forward(100)
+p.right(120)
+p.forward(100)
+p.right(120)
+p.forward(100)
+turtle.done()
