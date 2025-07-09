@@ -1,20 +1,9 @@
-import turtle
-turtle.Screen.bgcolor("Green")
-turtle.Screen.setup(300, 400)
-p = turtle.Turtle()
-p.forward(100)
-p.left(120)
-p.forward(100)
-p.left(120)
-p.forward(100)
-p.penup()
-p.right(150)
-p.forward(50)
-p.pendown()
-p.right(90)
-p.forward(100)
-p.right(120)
-p.forward(100)
-p.right(120)
-p.forward(100)
-turtle.done()
+def cube(n):
+    return n * n * n
+def by3(n):
+    if n % 3 == 0:
+        return cube(n)
+    else:
+        return False
+print(by3(20))
+print(by3(30))
