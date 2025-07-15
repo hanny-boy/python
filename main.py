@@ -1,9 +1,8 @@
-def cube(n):
-    return n * n * n
-def by3(n):
-    if n % 3 == 0:
-        return cube(n)
-    else:
-        return False
-print(by3(20))
-print(by3(30))
+n = int(input("Enter a number: "))
+while n > 0:   
+    if n > 0:
+        n = n - 1
+        if n == 5:
+            continue
+        print(n)
+print("goodbye")
