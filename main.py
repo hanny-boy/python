@@ -1,9 +1,4 @@
-valid = False
-while not valid:
-    try:
-        n = int(input("Enter a number: "))
-        if n % 2 == 0:
-            print("bye")
-        valid = True
-    except ValueError as e:
-        print("Exception occurred:", e)      
+bill = int(input("Enter the bill ammount:"))
+cash = int(input("Enter the paid cas ammount:"))
+change = cash - bill
+print("The change you will recieve is:", change)
