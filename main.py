@@ -1,7 +1,9 @@
-import random
-import string
-def generate_password(length=8):
-    c = list(string.ascii_letters + string.digits + string.punctuation)
-    password = ''.join(random.choice(c) for i in range(length))
-    return password
-print("The random password generated is:", generate_password(8))
+class dog:
+    species = "dog"
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+dog1 = dog("William", 4)
+print("Dog's name is:", dog1.name)
+print("Dog's age is:", dog1.age, "years")
+print("Dog's species is:", dog1.species)
