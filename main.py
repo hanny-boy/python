@@ -1,9 +1,12 @@
-class dog:
-    species = "dog"
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-dog1 = dog("William", 4)
-print("Dog's name is:", dog1.name)
-print("Dog's age is:", dog1.age, "years")
-print("Dog's species is:", dog1.species)
+class employee:
+    def __init__(self):
+        print("Employee Created!")
+    def __del__(self):
+        print("Employee Deleted!")
+def createemployee():
+    emp = employee()
+    print("Making Object..")
+    obj = employee()
+    print("Function End..")
+obj = createemployee()
+print("Program End..")
