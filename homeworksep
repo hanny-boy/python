@@ -1,0 +1,20 @@
+class BMW():
+    def Model(self):
+        print("BMW X5 M is the latest model.")
+    def Maxspeed(self):
+        print("The max speed for the latest model is 290 km/h.")
+    def Mileage(self):
+        print("the mileage is around 13 MPG in citys and 18 MPG in highways.")
+class ferrari():
+    def Model(self):
+        print("The latest model for ferrari is F80 hypercar.")
+    def Maxspeed(self):
+        print("The max speed for the f80 hypercar is 350 km/h.")
+    def Mileage(self):
+        print("The mileage is 14 MPG.")
+obj_BMW = BMW()
+obj_fer = ferrari()
+for car in (obj_fer, obj_BMW):
+    car.Model()
+    car.Maxspeed()
+    car.Mileage()
