@@ -1,8 +1,11 @@
 from tkinter import *
+from tkinter import messagebox
 window = Tk()
-window.geometry('400x400')
-window.title("Login Screen")
-f = Frame(master=window,height=200,width=350,bg="Black")
-l1 = Label(f,text="Full Name",bg="blue",fg="white")
-l2 = Label(f,text="Email ID",bg="blue",fg="white")
-l3 = Label(f,text="Full Name",bg="blue",fg="white")
+window.geometry("300x300")
+window.title("Virus Detectar")
+messagebox.showwarning("window name","Text to be displayed")
+def msg():
+    messagebox.showwarning("!ALERT!","!DON'T CLICK VIRUS FOUND!")
+b = Button(window,text="SCAN FOR VIRUS",command=msg)
+b.place(x=60,y=40)
+window.mainloop()
