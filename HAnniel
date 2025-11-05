@@ -1,0 +1,16 @@
+source /Users/hanniel/Documents/Python/.venv/bin/activate
+hanniel@Ns-iMac Python % source /Users/hanniel/Documents/Python/.venv/bin/activate
+(.venv) hanniel@Ns-iMac Python % /Users/hanniel/Documents/Python/.venv/bin/python /Users/hanniel/Documents/Python/2025-05-21/main.py
+Traceback (most recent call last):
+  File "/Users/hanniel/Documents/Python/2025-05-21/main.py", line 7, in <module>
+    window.rowconfigure(0,mainsize=800,weight=1)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/tkinter/__init__.py", line 1995, in grid_rowconfigure
+    return self._grid_configure('rowconfigure', index, cnf, kw)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/lib/python3.13/tkinter/__init__.py", line 1952, in _grid_configure
+    res = self.tk.call(
+              ('grid', command, self._w, index)
+              + options)
+_tkinter.TclError: bad option "-mainsize": must be -minsize, -pad, -uniform, or -weight
+(.venv) hanniel@Ns-iMac Python % 
