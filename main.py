@@ -17,7 +17,7 @@ def open_file():
       textedit.insert(END,text)
       input_file.close()
    window.title(f"text editor"-{filepath})
-def savefile():
+def save_file():
    filepath = asksaveasfilename(defaultextension="txt",filetypes=[("Text Files","*.txt")])
    if not filepath:
       return
@@ -29,3 +29,9 @@ def savefile():
 textedit = Text(window)
 frbuttons = Frame(window,relief=RAISED,bd = 2)
 btn_open = Button(frbuttons,text="open",command=open_file)
+btn_save = Button(frbuttons,text="save as ..",command=save_file)
+btn_open.grid(row=0,column=0,sticky="ew",padx=5,pady=5)
+btn_save.grid(row=0,column=0,sticky="ew",padx=5,pady=5)
+frbuttons.grid(row=0,column=0,sticky="ns")
+textedit.grid(row=0,column=1,sticky="nsew")
+window.mainloop()
