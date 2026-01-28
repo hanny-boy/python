@@ -1,0 +1,6 @@
+i = int(input("Enter 1st Number:"))
+o = int(input("Enter 2nd Number:"))
+print("num1|num2",i|o)
+print("num1&num2",i&o)
+print("~ num1",~i)
+print("~ num2",~o)
