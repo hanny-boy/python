@@ -1,0 +1,12 @@
+def oddoccouring(arr):
+    result = 0
+    for i in arr:
+        result = result^i
+    return result
+array = []
+n = int(input("Enter the array size : "))
+while(n):
+    num = int(input("enter number :"))
+    array.append(num)
+    n = n-1
+print("oddocouringnumber is",oddoccouring(array))
